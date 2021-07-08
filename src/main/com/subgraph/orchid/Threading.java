@@ -9,6 +9,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.locks.ReentrantLock;
 
+@SuppressWarnings({"UnstableApiUsage", "unused"})
 public class Threading {
 	static {
 		// Default policy goes here. If you want to change this, use one of the static methods before
