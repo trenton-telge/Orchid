@@ -1,7 +1,7 @@
 Orchid
 ======
 
-[![Gradle Build](https://github.com/trenton-telge/Orchid/actions/workflows/gradle.yml/badge.svg)](https://github.com/trenton-telge/Orchid/actions/workflows/gradle.yml)[![CodeQL](https://github.com/trenton-telge/Orchid/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/trenton-telge/Orchid/actions/workflows/codeql-analysis.yml)
+[![Gradle Build](https://github.com/trenton-telge/Orchid/actions/workflows/gradle.yml/badge.svg)](https://github.com/trenton-telge/Orchid/actions/workflows/gradle.yml)
 
 Orchid is a Tor client implementation and library written in pure Java.  Orchid's strength is that it can be used to Tor-ify Java and JVM applications with near transparency.
 
