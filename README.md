@@ -19,7 +19,7 @@ Orchid can also be used as a library by any application running on the JVM. This
 
 ## How to build
 
-Now Orchid uses [Gradle](https://gradle.org/) as its build system.  Currently tested with both Java 10 and 11 on Debian sid (openjdk-10-jdk / openjdk-11-jdk).
+Now Orchid uses [Gradle](https://gradle.org/) as its build system.  Currently tested with Java 11 on Debian sid (openjdk-11-jdk).
 
 ```
 gradle build
@@ -33,7 +33,7 @@ gradle fatJar
 
 will produce a fat JAR, which contains both classes and dependencies needed to run Orchid as a standalone client.
 
-You may find prebuilt JARs in [Releases](https://github.com/mhatta/Orchid/releases).
+You may find prebuilt JARs in [Releases](https://github.com/trenton-telge/Orchid/releases).
 
 The old Ant build system is still available, but works with Java 8 only.
 
@@ -42,7 +42,7 @@ The old Ant build system is still available, but works with Java 8 only.
 To start the Orchid SOCKS5 proxy, perform the following:
 
 ```
-java -jar Orchid-v1.0.6.jar
+java -jar Orchid.jar
 ```
 
 To test Orchid, you can tell your web browser to use Orchid as a SOCKS5 proxy (the default listening port is `9150`) - however it is important to note that Orchid + your browser is **NOT** a secure replacement for [the Tor Browser Bundle](https://www.torproject.org/projects/torbrowser.htm), which has many other enhancements beyond Tor.
@@ -54,7 +54,7 @@ For example, with Mozilla Firefox, by default, DNS lookups are not sent over a c
 Orchid also includes a "dashboard" feature to observe information about the internal state of Tor. To start the dashboard, set the following property when the JAR is run like:
 
 ```
-java -Dcom.subgraph.orchid.dashboard.port=10000 -jar Orchid-v1.0.6.jar
+java -Dcom.subgraph.orchid.dashboard.port=10000 -jar Orchid.jar
 ```
 
 To access the dashboard, just connect to the port (for this example `10000`) with netcat.
@@ -67,7 +67,9 @@ The Orchid Tor client exposes a SocketFactory that can be used within a JVM appl
 
 Orchid was originally developed by [Bruce Leidl](https://github.com/brl) of [Subgraph](https://subgraph.com/).  The original web page can be found [here](https://subgraph.com/orchid/).  This README borrows heavily from there.
 
-This fork is currently maintained by [Masayuki Hatta](http://about.me/mhatta) ([@mhatta](https://twitter.com/mhatta)).
+Orchid was maintained for years by [Masayuki Hatta](http://about.me/mhatta) ([@mhatta](https://twitter.com/mhatta)).
+
+This current fork is maintained by [Trenton Telge](http://trentontelge.com) ([@trenton-telge](https://github.com/trenton-telge))
 
 ## Acknowledgements
 
